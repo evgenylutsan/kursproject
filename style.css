@@ -1,0 +1,87 @@
+    .banner{
+    background-color: #F4CFAC;
+    }
+    
+    .call-to-action{
+    background-color: #011627;
+    color: white;
+    }
+    
+    .technologies .image-fluid{
+    height: 300px;
+    }
+
+    .image-fluid{
+        height: 250px;
+    }
+    
+    .dark{
+    background-color: #011627;
+    color: #83F3E9;
+    }
+    
+    .footer{
+        background-color: #011627;
+        color: white;
+        }
+    
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .navbar{
+        background-color: #acd1f4;
+        border-bottom: 1px solid #011627;
+    }
+
+    .img{
+        height: 45px;
+        width: 75px;
+        position:  relative;
+        right: 20px; 
+    }
+
+    .navbar-brand{
+        /* position: relative; */
+        /* right: 55px; */
+        font-size: 20px;
+        font-weight: bold;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .auth{
+        margin-top: 50px;
+    }
+
+    table{
+        margin-top: 20px;
+    }
+
+    .table {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid #dddddd;
+        border-collapse: collapse; 
+    }
+    .table th {
+        font-weight: bold;
+        padding: 5px;
+        background: #efefef;
+        border: 1px solid #dddddd;
+    }
+    .table td {
+        border: 1px solid #dddddd;
+        padding: 5px;
+    }
+
+    .alltasks{
+        margin-top: 60px;
+    }
+
+    .search{
+        margin-top: 100px;
+    }
+
+    .registr{
+        margin-top: 50px;
+    }

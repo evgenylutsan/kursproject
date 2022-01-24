@@ -31,33 +31,33 @@ session_start();
                 </span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarID">
-                <?php if (!empty($_SESSION['signin'])): ?>
+                <?php if (!empty($_SESSION['signin'])) : ?>
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="account.php">Личный кабинет</a>
                         <a class="nav-link active" aria-current="page" href="alltasks.php">Полный список документов</a>
                     </div>
-                <?php else: ?>
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="auth.php">Вход/Регистрация</a>
-                    <a class="nav-link active" aria-current="page" href="alltasks.php">Полный список документов</a>
-                </div>
+                <?php else : ?>
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="auth.php">Вход/Регистрация</a>
+                        <a class="nav-link active" aria-current="page" href="alltasks.php">Полный список документов</a>
+                    </div>
                 <?php endif; ?>
             </div>
         </div>
     </nav>
-</div>
-<footer class="footer">
-    <div class="container mb-6">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center txt">
-                <p>Правила землепользования и застройки</p>
+
+    <footer class="footer">
+        <div class="container mb-6">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center txt">
+                    <p>Правила землепользования и застройки</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="copyright text-center py-3 border-top text-muted">
-        <p>Московский политех &copy; 2022</p>
-    </div>
-</footer>
+        <div class="copyright text-center py-3 border-top text-muted">
+            <p>Московский политех &copy; 2022</p>
+        </div>
+    </footer>
 </body>
 
 </html>

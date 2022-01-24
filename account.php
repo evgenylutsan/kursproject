@@ -25,7 +25,6 @@
                     <div class="card-body">
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><?php echo $_SESSION["login"] ?></li>
                         <a class="btn btn-primary" href="logout.php" role="button">Выход</a>
                     </ul>
                 </div>

@@ -47,7 +47,7 @@
 
                     $result .= '<td>' . $elem['DocNumber'] . '</td>';
                     $result .= '<td>' . $elem['DocDate'] . '</td>';
-                    $result .= '<td>' . $elem['Link'] . '</td>';
+                    $result .= '<td> <a href = "//'.$elem['Link'].'">'.$elem['Link'].'</td>';
                     $result .= '<td>' . $elem['AdmArea'] . '</td>';
 
                     $result .= '</tr>';

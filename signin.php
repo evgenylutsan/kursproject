@@ -13,22 +13,17 @@ $result = $connect->query($sql);
 
 $user = $result->fetch_assoc();
 
-// if (mysqli_num_rows($r) == 0) {
-//     echo "Пользователь не найден";
-// } else if (mysqli_num_rows($result) == 1) {
-//     echo "Неверны логин или пароль";
-// }
-
 
 if(!$result || mysqli_num_rows($result) == 0){
     echo "Такой пользователь не существует.";
     echo $result;
     exit;
-} else if(!$result || mysqli_num_rows($result) == 1){
-    echo "Неверны логин или пароль.";
-    echo $result;
-    exit;
 }
+// } else if(!$result || mysqli_num_rows($result) == 1){
+//     echo "Неверны логин или пароль.";
+//     echo $result;
+//     exit;
+// }
 
 
 if (!empty($user)) {

@@ -20,18 +20,14 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6 mb-5">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <form method="post" action="signin.php">
+                        <div class="mb-3" >
+                            <label for="login" class="form-label">Логин</label>
+                            <input type="text" class="form-control" id="login" name="login">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Пароль</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                            <input type="password" class="form-control" id="pass" name="pass">
                         </div>
                         <button type="submit" class="btn btn-primary">Войти</button>
                         <a class="btn btn-primary" href="registr.php" role="button">Зарегистрироваться</a>

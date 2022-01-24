@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,34 +29,36 @@
     </section>
     <section class="alltasks container-fluid">
         <div class="row">
-            <table class="table">
-                <tr>
-                    <th>Номер документа</th>
-                    <th>Дата создания</th>
-                    <th>Ссылка</th>
-                    <th>Округ</th>
-                </tr>
-                <?php
-                $connect = mysqli_connect("std-mysql", "std_1601_kursovaya", "Genja2207!", "std_1601_kursovaya");
+            <div class="table-responsive-xxl">
+                <table class="table">
+                    <tr>
+                        <th>Номер документа</th>
+                        <th>Дата создания</th>
+                        <th>Ссылка на документ</th>
+                        <th>Округ</th>
+                    </tr>
+                    <?php
+                    $connect = mysqli_connect("std-mysql", "std_1601_kursovaya", "Genja2207!", "std_1601_kursovaya");
 
-                $sql = "SELECT DocNumber, DocDate, Link, AdmArea FROM data1";
-                $result = $connect->query($sql);
+                    $sql = "SELECT DocNumber, DocDate, Link, AdmArea FROM data1";
+                    $result = $connect->query($sql);
 
-                for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row);
-                $result = '';
-                foreach ($data as $elem) {
-                    $result .= '<tr>';
+                    for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row);
+                    $result = '';
+                    foreach ($data as $elem) {
+                        $result .= '<tr>';
 
-                    $result .= '<td>' . $elem['DocNumber'] . '</td>';
-                    $result .= '<td>' . $elem['DocDate'] . '</td>';
-                    $result .= '<td>' . $elem['Link'] . '</td>';
-                    $result .= '<td>' . $elem['AdmArea'] . '</td>';
+                        $result .= '<td>' . $elem['DocNumber'] . '</td>';
+                        $result .= '<td>' . $elem['DocDate'] . '</td>';
+                        $result .= '<td> <a href = "//'.$elem['Link'].'">'.$elem['Link'].'</td>';
+                        $result .= '<td>' . $elem['AdmArea'] . '</td>';
 
-                    $result .= '</tr>';
-                }
-                echo $result;
-                ?>
-            </table>
+                        $result .= '</tr>';
+                    }
+                    echo $result;
+                    ?>
+                </table>
+            </div>
         </div>
     </section>
 </body>
@@ -63,4 +69,3 @@
 <?php
 require("template.php")
 ?>
-

@@ -20,10 +20,11 @@
     color: #83F3E9;
     }
     
+
     .footer{
         background-color: #011627;
         color: white;
-        }
+    }
     
     body{
         font-family: 'Montserrat', sans-serif;
@@ -49,9 +50,7 @@
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     
-    .auth{
-        margin-top: 50px;
-    }
+
 
     table{
         margin-top: 20px;
@@ -85,3 +84,22 @@
     .registr{
         margin-top: 50px;
     }
+
+    body{
+        margin-top: 50px;
+    }
+
+    .profile{
+        margin-top: 50px;
+    }
+
+    .card-img-top{
+        height: 275px;
+        width: 290px;
+    }
+
+    .txt{
+        margin-top: 15px;
+    }
+
+    
